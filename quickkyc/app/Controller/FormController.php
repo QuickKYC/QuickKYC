@@ -43,6 +43,7 @@ class FormController extends AppController
 			$json_data["fid"] = $form_data['Form']['id'];
 			$json_data["name"] = $form_data['Form']['name'];
 			$json_data["merchant_url"] = $form_data['Merchant']['ms_url'];
+			$json_data["mname"] = $form_data['Merchant']['name'];
 			$form_details = array();
 			$i = 0;
 			foreach ($form_data['FormKey'] as $fDetails)

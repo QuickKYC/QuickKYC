@@ -176,8 +176,10 @@ class MerchantController extends AppController
 					$this->log("Response from FORMCONTROLLER");
 					$this->log($result);
 				}
-				$data["refid"] = $id;
+				
 				unset($data["fid"]);
+				
+				$data["refid"] = $id;
 				$this->log("DATAAAA");
 				$this->log($data);
 				
@@ -275,6 +277,8 @@ class MerchantController extends AppController
 				fclose($file_path);
 			}
 		}
+		
+		$this->log($str);
 	
 		return $str;
 	}
