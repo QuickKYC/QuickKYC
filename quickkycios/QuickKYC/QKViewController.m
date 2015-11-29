@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QKViewController.m
 //  QuickKYC
 //
 //  Created by macdev on 28/11/15.
@@ -7,9 +7,7 @@
 //
 
 #import "QKViewController.h"
-#import "QRCodeReaderDelegate.h"
 
-@interface ViewController : QKViewController <QRCodeReaderDelegate>
+@implementation QKViewController
 
 @end
-

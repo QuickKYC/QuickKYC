@@ -13,19 +13,75 @@
 		EFF132B41C0952A1004325E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF132B21C0952A1004325E7 /* Main.storyboard */; };
 		EFF132B61C0952A1004325E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF132B51C0952A1004325E7 /* Assets.xcassets */; };
 		EFF132B91C0952A1004325E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF132B71C0952A1004325E7 /* LaunchScreen.storyboard */; };
+		EFF132DD1C098789004325E7 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132D31C098789004325E7 /* QRCameraSwitchButton.m */; };
+		EFF132DE1C098789004325E7 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132D51C098789004325E7 /* QRCodeReader.m */; };
+		EFF132DF1C098789004325E7 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132D81C098789004325E7 /* QRCodeReaderView.m */; };
+		EFF132E01C098789004325E7 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132DA1C098789004325E7 /* QRCodeReaderViewController.m */; };
+		EFF132E11C098789004325E7 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132DC1C098789004325E7 /* QRToggleTorchButton.m */; };
+		EFF132E31C0987B6004325E7 /* Profiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF132E21C0987B6004325E7 /* Profiles.plist */; };
+		EFF132E61C0998EC004325E7 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132E51C0998EC004325E7 /* CategoryViewController.m */; };
+		EFF132E91C099E0E004325E7 /* SwitchTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132E81C099E0E004325E7 /* SwitchTableCell.m */; };
+		EFF132EB1C09A1B6004325E7 /* AllFields.plist_old in Resources */ = {isa = PBXBuildFile; fileRef = EFF132EA1C09A1B6004325E7 /* AllFields.plist_old */; };
+		EFF132EE1C09B700004325E7 /* AllFields.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132ED1C09B700004325E7 /* AllFields.m */; };
+		EFF132F51C09DE87004325E7 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132F41C09DE87004325E7 /* FormViewController.m */; };
+		EFF132F81C09E3F1004325E7 /* Profiles.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132F71C09E3F1004325E7 /* Profiles.m */; };
+		EFF132FB1C09EAFB004325E7 /* TextTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132FA1C09EAFB004325E7 /* TextTableCell.m */; };
+		EFF132FE1C09EB24004325E7 /* DropDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132FD1C09EB24004325E7 /* DropDownCell.m */; };
+		EFF133021C09EC62004325E7 /* QKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133011C09EC62004325E7 /* QKViewController.m */; };
+		EFF133051C09F07E004325E7 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133041C09F07E004325E7 /* CustomCell.m */; };
+		EFF1330A1C0A25B3004325E7 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133091C0A25B3004325E7 /* TableView.m */; };
+		EFF1330D1C0A2A1A004325E7 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1330C1C0A2A1A004325E7 /* KLCPopup.m */; };
+		EFF133101C0A8CED004325E7 /* AllFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF1330F1C0A8CED004325E7 /* AllFields.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EFF132A61C0952A1004325E7 /* QuickKYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickKYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF132AA1C0952A1004325E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFF132AC1C0952A1004325E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EFF132AD1C0952A1004325E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFF132AC1C0952A1004325E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = QuickKYC/AppDelegate.h; sourceTree = "<group>"; };
+		EFF132AD1C0952A1004325E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = QuickKYC/AppDelegate.m; sourceTree = "<group>"; };
 		EFF132AF1C0952A1004325E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EFF132B01C0952A1004325E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EFF132B31C0952A1004325E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFF132B51C0952A1004325E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFF132B81C0952A1004325E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFF132BA1C0952A1004325E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF132D21C098789004325E7 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCameraSwitchButton.h; sourceTree = "<group>"; };
+		EFF132D31C098789004325E7 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		EFF132D41C098789004325E7 /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		EFF132D51C098789004325E7 /* QRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReader.m; sourceTree = "<group>"; };
+		EFF132D61C098789004325E7 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		EFF132D71C098789004325E7 /* QRCodeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderView.h; sourceTree = "<group>"; };
+		EFF132D81C098789004325E7 /* QRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderView.m; sourceTree = "<group>"; };
+		EFF132D91C098789004325E7 /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		EFF132DA1C098789004325E7 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		EFF132DB1C098789004325E7 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRToggleTorchButton.h; sourceTree = "<group>"; };
+		EFF132DC1C098789004325E7 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRToggleTorchButton.m; sourceTree = "<group>"; };
+		EFF132E21C0987B6004325E7 /* Profiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profiles.plist; sourceTree = "<group>"; };
+		EFF132E41C0998EC004325E7 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		EFF132E51C0998EC004325E7 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		EFF132E71C099E0E004325E7 /* SwitchTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableCell.h; sourceTree = "<group>"; };
+		EFF132E81C099E0E004325E7 /* SwitchTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTableCell.m; sourceTree = "<group>"; };
+		EFF132EA1C09A1B6004325E7 /* AllFields.plist_old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AllFields.plist_old; sourceTree = "<group>"; };
+		EFF132EC1C09B700004325E7 /* AllFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFields.h; sourceTree = "<group>"; };
+		EFF132ED1C09B700004325E7 /* AllFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFields.m; sourceTree = "<group>"; };
+		EFF132F31C09DE87004325E7 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		EFF132F41C09DE87004325E7 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		EFF132F61C09E3F1004325E7 /* Profiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profiles.h; sourceTree = "<group>"; };
+		EFF132F71C09E3F1004325E7 /* Profiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profiles.m; sourceTree = "<group>"; };
+		EFF132F91C09EAFB004325E7 /* TextTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableCell.h; sourceTree = "<group>"; };
+		EFF132FA1C09EAFB004325E7 /* TextTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableCell.m; sourceTree = "<group>"; };
+		EFF132FC1C09EB24004325E7 /* DropDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownCell.h; sourceTree = "<group>"; };
+		EFF132FD1C09EB24004325E7 /* DropDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownCell.m; sourceTree = "<group>"; };
+		EFF132FF1C09EBF8004325E7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		EFF133001C09EC62004325E7 /* QKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKViewController.h; sourceTree = "<group>"; };
+		EFF133011C09EC62004325E7 /* QKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKViewController.m; sourceTree = "<group>"; };
+		EFF133031C09F07E004325E7 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		EFF133041C09F07E004325E7 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		EFF133081C0A25B3004325E7 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		EFF133091C0A25B3004325E7 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		EFF1330B1C0A2A1A004325E7 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
+		EFF1330C1C0A2A1A004325E7 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		EFF1330F1C0A8CED004325E7 /* AllFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllFields.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +98,9 @@
 		EFF1329D1C0952A1004325E7 = {
 			isa = PBXGroup;
 			children = (
+				EFF132AC1C0952A1004325E7 /* AppDelegate.h */,
+				EFF132AD1C0952A1004325E7 /* AppDelegate.m */,
+				EFF132D11C098739004325E7 /* QRReaderLib */,
 				EFF132A81C0952A1004325E7 /* QuickKYC */,
 				EFF132A71C0952A1004325E7 /* Products */,
 			);
@@ -58,15 +117,25 @@
 		EFF132A81C0952A1004325E7 /* QuickKYC */ = {
 			isa = PBXGroup;
 			children = (
-				EFF132AC1C0952A1004325E7 /* AppDelegate.h */,
-				EFF132AD1C0952A1004325E7 /* AppDelegate.m */,
+				EFF1330E1C0A2A23004325E7 /* Popup */,
+				EFF133071C0A189E004325E7 /* Plist */,
+				EFF133061C0A1863004325E7 /* CustomCells */,
 				EFF132AF1C0952A1004325E7 /* ViewController.h */,
 				EFF132B01C0952A1004325E7 /* ViewController.m */,
+				EFF133081C0A25B3004325E7 /* TableView.h */,
+				EFF133091C0A25B3004325E7 /* TableView.m */,
+				EFF132E41C0998EC004325E7 /* CategoryViewController.h */,
+				EFF132E51C0998EC004325E7 /* CategoryViewController.m */,
+				EFF132F31C09DE87004325E7 /* FormViewController.h */,
+				EFF132F41C09DE87004325E7 /* FormViewController.m */,
+				EFF133001C09EC62004325E7 /* QKViewController.h */,
+				EFF133011C09EC62004325E7 /* QKViewController.m */,
 				EFF132B21C0952A1004325E7 /* Main.storyboard */,
 				EFF132B51C0952A1004325E7 /* Assets.xcassets */,
 				EFF132B71C0952A1004325E7 /* LaunchScreen.storyboard */,
 				EFF132BA1C0952A1004325E7 /* Info.plist */,
 				EFF132A91C0952A1004325E7 /* Supporting Files */,
+				EFF132FF1C09EBF8004325E7 /* Constants.h */,
 			);
 			path = QuickKYC;
 			sourceTree = "<group>";
@@ -77,6 +146,63 @@
 				EFF132AA1C0952A1004325E7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFF132D11C098739004325E7 /* QRReaderLib */ = {
+			isa = PBXGroup;
+			children = (
+				EFF132D21C098789004325E7 /* QRCameraSwitchButton.h */,
+				EFF132D31C098789004325E7 /* QRCameraSwitchButton.m */,
+				EFF132D41C098789004325E7 /* QRCodeReader.h */,
+				EFF132D51C098789004325E7 /* QRCodeReader.m */,
+				EFF132D61C098789004325E7 /* QRCodeReaderDelegate.h */,
+				EFF132D71C098789004325E7 /* QRCodeReaderView.h */,
+				EFF132D81C098789004325E7 /* QRCodeReaderView.m */,
+				EFF132D91C098789004325E7 /* QRCodeReaderViewController.h */,
+				EFF132DA1C098789004325E7 /* QRCodeReaderViewController.m */,
+				EFF132DB1C098789004325E7 /* QRToggleTorchButton.h */,
+				EFF132DC1C098789004325E7 /* QRToggleTorchButton.m */,
+			);
+			name = QRReaderLib;
+			path = QuickKYC;
+			sourceTree = "<group>";
+		};
+		EFF133061C0A1863004325E7 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				EFF133031C09F07E004325E7 /* CustomCell.h */,
+				EFF133041C09F07E004325E7 /* CustomCell.m */,
+				EFF132E71C099E0E004325E7 /* SwitchTableCell.h */,
+				EFF132E81C099E0E004325E7 /* SwitchTableCell.m */,
+				EFF132F91C09EAFB004325E7 /* TextTableCell.h */,
+				EFF132FC1C09EB24004325E7 /* DropDownCell.h */,
+				EFF132FA1C09EAFB004325E7 /* TextTableCell.m */,
+				EFF132FD1C09EB24004325E7 /* DropDownCell.m */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		EFF133071C0A189E004325E7 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				EFF132EC1C09B700004325E7 /* AllFields.h */,
+				EFF132ED1C09B700004325E7 /* AllFields.m */,
+				EFF132F61C09E3F1004325E7 /* Profiles.h */,
+				EFF132F71C09E3F1004325E7 /* Profiles.m */,
+				EFF132E21C0987B6004325E7 /* Profiles.plist */,
+				EFF132EA1C09A1B6004325E7 /* AllFields.plist_old */,
+				EFF1330F1C0A8CED004325E7 /* AllFields.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		EFF1330E1C0A2A23004325E7 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				EFF1330B1C0A2A1A004325E7 /* KLCPopup.h */,
+				EFF1330C1C0A2A1A004325E7 /* KLCPopup.m */,
+			);
+			name = Popup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF132E31C0987B6004325E7 /* Profiles.plist in Resources */,
 				EFF132B91C0952A1004325E7 /* LaunchScreen.storyboard in Resources */,
+				EFF133101C0A8CED004325E7 /* AllFields.plist in Resources */,
+				EFF132EB1C09A1B6004325E7 /* AllFields.plist_old in Resources */,
 				EFF132B61C0952A1004325E7 /* Assets.xcassets in Resources */,
 				EFF132B41C0952A1004325E7 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +278,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF132E01C098789004325E7 /* QRCodeReaderViewController.m in Sources */,
+				EFF132E11C098789004325E7 /* QRToggleTorchButton.m in Sources */,
 				EFF132B11C0952A1004325E7 /* ViewController.m in Sources */,
+				EFF132F81C09E3F1004325E7 /* Profiles.m in Sources */,
+				EFF132DE1C098789004325E7 /* QRCodeReader.m in Sources */,
+				EFF132E91C099E0E004325E7 /* SwitchTableCell.m in Sources */,
+				EFF132E61C0998EC004325E7 /* CategoryViewController.m in Sources */,
+				EFF132F51C09DE87004325E7 /* FormViewController.m in Sources */,
+				EFF133021C09EC62004325E7 /* QKViewController.m in Sources */,
+				EFF1330A1C0A25B3004325E7 /* TableView.m in Sources */,
 				EFF132AE1C0952A1004325E7 /* AppDelegate.m in Sources */,
+				EFF132DF1C098789004325E7 /* QRCodeReaderView.m in Sources */,
+				EFF132FE1C09EB24004325E7 /* DropDownCell.m in Sources */,
 				EFF132AB1C0952A1004325E7 /* main.m in Sources */,
+				EFF133051C09F07E004325E7 /* CustomCell.m in Sources */,
+				EFF132FB1C09EAFB004325E7 /* TextTableCell.m in Sources */,
+				EFF132DD1C098789004325E7 /* QRCameraSwitchButton.m in Sources */,
+				EFF1330D1C0A2A1A004325E7 /* KLCPopup.m in Sources */,
+				EFF132EE1C09B700004325E7 /* AllFields.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
