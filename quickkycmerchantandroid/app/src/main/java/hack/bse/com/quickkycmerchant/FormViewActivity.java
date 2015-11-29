@@ -237,17 +237,19 @@ public class FormViewActivity extends AppCompatActivity {
             formViewProgressBar.setVisibility(ProgressBar.GONE);
             try {
                 System.out.println(aVoid);
-                JSONObject jsonObject = new JSONObject(aVoid);
-                if(jsonObject.getString("status").equals("success")){
-                    if(jsonObject.has("sharedata")){
-                        JSONArray jsonArray = jsonObject.getJSONArray("sharedata");
-                        if(jsonArray!= null && jsonArray.length() > 0){
-                            Intent intent = new Intent(FormViewActivity.this, GenerateQRCodeActivity.class);
-                            intent.putExtra("tmpStr", jsonArray.toString());
-                            startActivity(intent);
-                        }
-                        else{
-                            finish();
+                if(aVoid != null){
+                    JSONObject jsonObject = new JSONObject(aVoid);
+                    if(jsonObject.getString("status").equals("success")){
+                        if(jsonObject.has("sharedata")){
+                            JSONArray jsonArray = jsonObject.getJSONArray("sharedata");
+                            if(jsonArray!= null && jsonArray.length() > 0){
+                                Intent intent = new Intent(FormViewActivity.this, GenerateQRCodeActivity.class);
+                                intent.putExtra("tmpStr", jsonArray.toString());
+                                startActivity(intent);
+                            }
+                            else{
+                                finish();
+                            }
                         }
                     }
                 }
