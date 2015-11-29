@@ -105,15 +105,16 @@ public class FormViewActivity extends AppCompatActivity {
                 jsonObject.put("refid", rfId);
                 jsonObject.put("empid", sharedpreferences.getString("EMP_ID", null));
 
-                JSONArray jsonArray = new JSONArray();
-                for (int i = 0; i < jsonQKDocArray.length(); i++) {
-                    JSONObject tmp = new JSONObject();
-                    tmp.put("md5", jsonQKDocArray.getJSONObject(i).getString("name"));
-                    jsonArray.put(tmp);
+                if(jsonQKDocArray != null){
+                    JSONArray jsonArray = new JSONArray();
+                    for (int i = 0; i < jsonQKDocArray.length(); i++) {
+                        JSONObject tmp = new JSONObject();
+                        tmp.put("md5", jsonQKDocArray.getJSONObject(i).getString("name"));
+                        jsonArray.put(tmp);
+                    }
+
+                    jsonObject.put("qk_docs", jsonArray);
                 }
-
-                jsonObject.put("qk_docs", jsonArray);
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
