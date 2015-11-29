@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75EB337B1C0AFF330096525E /* company-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EB337A1C0AFF330096525E /* company-logo.png */; };
 		EFF132AB1C0952A1004325E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132AA1C0952A1004325E7 /* main.m */; };
 		EFF132AE1C0952A1004325E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132AD1C0952A1004325E7 /* AppDelegate.m */; };
 		EFF132B11C0952A1004325E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132B01C0952A1004325E7 /* ViewController.m */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75EB337A1C0AFF330096525E /* company-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "company-logo.png"; sourceTree = "<group>"; };
 		EFF132A61C0952A1004325E7 /* QuickKYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickKYC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF132AA1C0952A1004325E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFF132AC1C0952A1004325E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = QuickKYC/AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				EFF132AC1C0952A1004325E7 /* AppDelegate.h */,
 				EFF132AD1C0952A1004325E7 /* AppDelegate.m */,
+				75EB337A1C0AFF330096525E /* company-logo.png */,
 				EFF132D11C098739004325E7 /* QRReaderLib */,
 				EFF132A81C0952A1004325E7 /* QuickKYC */,
 				EFF132A71C0952A1004325E7 /* Products */,
@@ -316,6 +319,7 @@
 				EFF132EB1C09A1B6004325E7 /* AllFields.plist_old in Resources */,
 				EFF132B61C0952A1004325E7 /* Assets.xcassets in Resources */,
 				EFF132B41C0952A1004325E7 /* Main.storyboard in Resources */,
+				75EB337B1C0AFF330096525E /* company-logo.png in Resources */,
 				EFF133161C0ACDB3004325E7 /* Profiles.plist in Resources */,
 				EFF133251C0AED78004325E7 /* j_pancard.jpeg in Resources */,
 				EFF1331B1C0AD17B004325E7 /* s_pancard.jpg in Resources */,
