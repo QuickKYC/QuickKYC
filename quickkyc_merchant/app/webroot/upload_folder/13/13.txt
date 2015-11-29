@@ -1,0 +1,1 @@
+{"mname":"Barclays","fid":"1","qk_keys":[{"value":"Sophia Loren","qkid":"QK_PRF_NAME"},{"value":"Female","qkid":"QK_PRF_GENDER"},{"value":"28112015","qkid":"QK_PRF_DOB"},{"value":"SIngle","qkid":"QK_PRF_MARITALSTATUS"}],"name":"Saving Account"}

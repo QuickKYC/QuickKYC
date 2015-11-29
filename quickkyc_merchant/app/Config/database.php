@@ -69,10 +69,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'host' => '127.0.0.1',
+		'login' => 'qkycmerchant',
+		'password' => 'qkycmerchant@248',
+		'database' => 'kyc_merchant',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
