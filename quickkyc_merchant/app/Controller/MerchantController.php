@@ -273,11 +273,11 @@ class MerchantController extends AppController
 				$file_path = $dir.'/'.$folder_id.'.txt';
 				$file_path_2 = $file_path;
 				$file_path = fopen($file_path, 'r');
-				$str = fread($file_path,filesize($file_path_2));
+				$str = fread($file_path,1000000);
 				fclose($file_path);
 			}
 		}
-		
+		$this->log("STRRRR");
 		$this->log($str);
 	
 		return $str;
