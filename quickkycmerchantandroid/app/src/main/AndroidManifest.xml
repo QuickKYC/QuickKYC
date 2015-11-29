@@ -15,15 +15,17 @@
             android:label="">
         </activity>
         <activity android:name=".GenerateQRCodeActivity" android:label=""/>
-        <activity android:name=".LoginActivity" android:label=""/>
-        <activity android:name=".FormListActivity" android:label=""/>
-        <activity android:name=".FormViewActivity" android:label="">
+
+        <activity android:name=".LoginActivity" android:label="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".FormListActivity" android:label=""/>
+        <activity android:name=".FormViewActivity" android:label=""/>
     </application>
 
 </manifest>

@@ -7,5 +7,5 @@ public class Url {
     public static final String M_AUTH = "/quickkyc_merchant/merchant/login";
     public static final String M_ALL_FORM = "/quickkyc_merchant/merchant/getallform";
     public static final String M_GET_FORM = "/quickkyc_merchant/merchant/getform";
-    public static final String M_VALIDATE = "/validate";
+    public static final String M_VALIDATE = "/quickkyc_merchant/merchant/validate";
 }

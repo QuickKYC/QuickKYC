@@ -37,7 +37,7 @@ public class FormViewActivity extends AppCompatActivity {
     private String rfId;
     private  static final String MyPREFERENCES = "KYCPrefs" ;
 
-    private String tmpStr = "{\n" +
+    /*private String tmpStr = "{\n" +
             "\t\"refid\": \"12\",\n" +
             "\t\"fname\": \"Saving Account\",\n" +
             "\t\"mname\": \"Barclays\",\n" +
@@ -59,7 +59,7 @@ public class FormViewActivity extends AppCompatActivity {
             "\t\t{\"qkid\": \"QK_DOC_PAN\", \"name\": \"pancopy.png\", \"data\": \"base64image\", \"mname\": \"Barclays\", \"comment\": \"Verified by Ram\", \"verified\": 1},\n" +
             "\t\t{\"qkid\": \"QK_DOC_DL\", \"name\": \"dlcopy.png\", \"data\": \"base64image\", \"mname\": \"Barclays\", \"comment\": \"Verified by Ram\", \"verified\": 1}\n" +
             "\t]\n" +
-            "}";
+            "}";*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,36 +83,22 @@ public class FormViewActivity extends AppCompatActivity {
             }
         });
 
-        try {
-            ReadJsonFromAssets readJsonFromAssets = new ReadJsonFromAssets();
-            JSONArray jsonArray = new JSONArray(readJsonFromAssets.readJson(this, "qkyes"));
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonObject = jsonArray.getJSONObject(i);
-                Constants.map.put(jsonObject.getString("id"), jsonObject);
+        if(new ConnectionDetector(this).isConnectingToInternet()){
+            String fid = getIntent().getStringExtra("fid");
+            if(fid != null) {
+                PostDataAsync postDataAsync = new PostDataAsync(fid);
+                postDataAsync.execute();
             }
         }
-        catch (JSONException e){
-            System.out.println(e);
+        else{
+            Toast.makeText(this, "Not connected to internet", Toast.LENGTH_SHORT).show();
         }
-
-//        if(new ConnectionDetector(this).isConnectingToInternet()){
-//            String fid = getIntent().getStringExtra("fid");
-//            if(fid != null) {
-        PostDataAsync postDataAsync = new PostDataAsync("1");
-        postDataAsync.execute();
-//            }
-//        }
-//        else{
-//            Toast.makeText(this, "Not connected to internet", Toast.LENGTH_SHORT).show();
-//        }
     }
 
     public void verify(View view) {
         if(new ConnectionDetector(this).isConnectingToInternet()){
 
             SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-
-//            jsonQKDocArray
             JSONObject jsonObject = new JSONObject();
             try {
 
@@ -138,10 +124,6 @@ public class FormViewActivity extends AppCompatActivity {
         else{
             Toast.makeText(this, "Not connected to internet", Toast.LENGTH_SHORT).show();
         }
-
-        Intent intent = new Intent(this, GenerateQRCodeActivity.class);
-//        intent.putExtra("tmpStr", tmpStr);
-        startActivity(intent);
     }
 
     private void prepareListData(Map<String, JSONObject> map, JSONObject jsonObject) {
@@ -159,8 +141,10 @@ public class FormViewActivity extends AppCompatActivity {
                 tmpValMap.put(jsonQKKeysArray.getJSONObject(i).getString("qkid"), jsonQKKeysArray.getJSONObject(i).getString("value"));
             }
 
-            for (int i = 0; i < jsonQKDocArray.length(); i++) {
-                tmpValMap.put(jsonQKDocArray.getJSONObject(i).getString("qkid"), jsonQKDocArray.getJSONObject(i).toString());
+            if(jsonQKDocArray != null){
+                for (int i = 0; i < jsonQKDocArray.length(); i++) {
+                    tmpValMap.put(jsonQKDocArray.getJSONObject(i).getString("qkid"), jsonQKDocArray.getJSONObject(i).toString());
+                }
             }
 
             for (Map.Entry<String, JSONObject> entry : map.entrySet()) {
@@ -204,15 +188,16 @@ public class FormViewActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            return null;//new PostData().postData(url, jsonObject.toString());
+            return new PostData().postData(url, jsonObject.toString());
         }
 
         @Override
         protected void onPostExecute(String aVoid) {
             formViewProgressBar.setVisibility(ProgressBar.GONE);
             try {
-                JSONObject jsonObject = new JSONObject(tmpStr);
-//                JSONObject jsonObject = new JSONObject(aVoid);
+                System.out.println(aVoid);
+//                JSONObject jsonObject = new JSONObject(tmpStr);
+                JSONObject jsonObject = new JSONObject(aVoid);
                 prepareListData(Constants.map, jsonObject);
 
                 listAdapter = new ExpandableListAdapter(FormViewActivity.this, listDataHeader, listDataChild, tmpValMap);
@@ -251,7 +236,20 @@ public class FormViewActivity extends AppCompatActivity {
             formViewProgressBar.setVisibility(ProgressBar.GONE);
             try {
                 System.out.println(aVoid);
-                 JSONObject jsonObject = new JSONObject(aVoid);
+                JSONObject jsonObject = new JSONObject(aVoid);
+                if(jsonObject.getString("status").equals("success")){
+                    if(jsonObject.has("sharedata")){
+                        JSONArray jsonArray = jsonObject.getJSONArray("sharedata");
+                        if(jsonArray!= null && jsonArray.length() > 0){
+                            Intent intent = new Intent(FormViewActivity.this, GenerateQRCodeActivity.class);
+                            intent.putExtra("tmpStr", jsonArray.toString());
+                            startActivity(intent);
+                        }
+                        else{
+                            finish();
+                        }
+                    }
+                }
             }
             catch (JSONException e){
                 System.out.println(e);
