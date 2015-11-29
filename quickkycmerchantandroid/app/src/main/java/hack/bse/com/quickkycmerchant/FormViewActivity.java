@@ -70,6 +70,7 @@ public class FormViewActivity extends AppCompatActivity {
 
         SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         url = sharedpreferences.getString("URL", null);
+        urlVerify = sharedpreferences.getString("URL", null);
         if(url != null){
             url += Url.M_GET_FORM;
             urlVerify += Url.M_VALIDATE;
@@ -105,15 +106,16 @@ public class FormViewActivity extends AppCompatActivity {
                 jsonObject.put("refid", rfId);
                 jsonObject.put("empid", sharedpreferences.getString("EMP_ID", null));
 
-                JSONArray jsonArray = new JSONArray();
-                for (int i = 0; i < jsonQKDocArray.length(); i++) {
-                    JSONObject tmp = new JSONObject();
-                    tmp.put("md5", jsonQKDocArray.getJSONObject(i).getString("name"));
-                    jsonArray.put(tmp);
+                if(jsonQKDocArray != null){
+                    JSONArray jsonArray = new JSONArray();
+                    for (int i = 0; i < jsonQKDocArray.length(); i++) {
+                        JSONObject tmp = new JSONObject();
+                        tmp.put("md5", jsonQKDocArray.getJSONObject(i).getString("name"));
+                        jsonArray.put(tmp);
+                    }
+
+                    jsonObject.put("qk_docs", jsonArray);
                 }
-
-                jsonObject.put("qk_docs", jsonArray);
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -236,17 +238,19 @@ public class FormViewActivity extends AppCompatActivity {
             formViewProgressBar.setVisibility(ProgressBar.GONE);
             try {
                 System.out.println(aVoid);
-                JSONObject jsonObject = new JSONObject(aVoid);
-                if(jsonObject.getString("status").equals("success")){
-                    if(jsonObject.has("sharedata")){
-                        JSONArray jsonArray = jsonObject.getJSONArray("sharedata");
-                        if(jsonArray!= null && jsonArray.length() > 0){
-                            Intent intent = new Intent(FormViewActivity.this, GenerateQRCodeActivity.class);
-                            intent.putExtra("tmpStr", jsonArray.toString());
-                            startActivity(intent);
-                        }
-                        else{
-                            finish();
+                if(aVoid != null){
+                    JSONObject jsonObject = new JSONObject(aVoid);
+                    if(jsonObject.getString("status").equals("success")){
+                        if(jsonObject.has("sharedata")){
+                            JSONArray jsonArray = jsonObject.getJSONArray("sharedata");
+                            if(jsonArray!= null && jsonArray.length() > 0){
+                                Intent intent = new Intent(FormViewActivity.this, GenerateQRCodeActivity.class);
+                                intent.putExtra("tmpStr", jsonArray.toString());
+                                startActivity(intent);
+                            }
+                            else{
+                                finish();
+                            }
                         }
                     }
                 }
