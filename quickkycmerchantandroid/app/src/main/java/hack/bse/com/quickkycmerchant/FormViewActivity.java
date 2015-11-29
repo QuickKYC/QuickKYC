@@ -70,6 +70,7 @@ public class FormViewActivity extends AppCompatActivity {
 
         SharedPreferences sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         url = sharedpreferences.getString("URL", null);
+        urlVerify = sharedpreferences.getString("URL", null);
         if(url != null){
             url += Url.M_GET_FORM;
             urlVerify += Url.M_VALIDATE;
