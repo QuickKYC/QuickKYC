@@ -279,7 +279,7 @@ class MerchantController extends AppController
 		}
 		$this->log("STRRRR");
 		$this->log($str);
-	
+		$str = '{"mname":"ABC Bank","qk_keys":[{"value":"Sophia Loren","qkid":"QK_PRF_NAME"},{"value":"Female","qkid":"QK_PRF_GENDER"},{"value":"10101990","qkid":"QK_PRF_DOB"},{"value":"Single","qkid":"QK_PRF_MARITALSTATUS"},{"value":"9299919999","qkid":"QK_CNT_PHONE_MOBILE_1"},{"value":"Jayanagar, Bangalore","qkid":"QK_CNT_HOMEADDR"},{"value":"560069","qkid":"QK_CNT_HOMEADDR_PIN"},{"value":"BR344333333","qkid":"QK_ID_PAN"},{"value":"PA-AA-2222","qkid":"QK_ID_PASSPORT"}],"name":"Saving Account","refid":"18"}';
 		return $str;
 	}
 
