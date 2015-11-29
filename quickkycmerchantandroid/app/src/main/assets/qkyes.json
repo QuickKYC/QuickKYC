@@ -1,0 +1,361 @@
+[
+  {
+    "id": "QK_PRF_NAME",
+    "name": "Name",
+    "placeholder": "Enter your name",
+    "type": "Text",
+    "category": "Personal Information"
+  },
+  {
+    "id": "QK_PRF_GENDER",
+    "name": "Gender",
+    "placeholder": "",
+    "type": "Enum",
+    "category": "Personal Information",
+    "options": [
+      "Male",
+      "Female"
+    ]
+  },
+  {
+    "id": "QK_PRF_DOB",
+    "name": "Date of Birth",
+    "placeholder": "",
+    "type": "Date",
+    "category": "Personal Information"
+  },
+  {
+    "id": "QK_PRF_MARITALSTATUS",
+    "name": "Marital Status",
+    "placeholder": "",
+    "type": "Enum",
+    "category": "Personal Information",
+    "options": [
+      "Married",
+      "Single",
+      "Divorced"
+    ]
+  },
+  {
+    "id": "QK_PRF_SPOUSENAME",
+    "name": "Spouse Name",
+    "placeholder": "Enter your spouse name",
+    "type": "Text",
+    "category": "Personal Information"
+  },
+  {
+    "id": "QK_PRF_SPOUSEGENDER",
+    "name": "Spouse Gender",
+    "placeholder": "",
+    "type": "Enum",
+    "category": "Personal Information",
+    "options": [
+      "Male",
+      "Female"
+    ]
+  },
+  {
+    "id": "QK_PRF_SPOUSEDOB",
+    "name": "Spouse Date of Birth",
+    "placeholder": "",
+    "type": "Date",
+    "category": "Personal Information"
+  },
+  {
+    "id": "QK_PRF_OCCUPATION",
+    "name": "Occupation",
+    "placeholder": "Enter your occupation",
+    "type": "Text",
+    "category": "Personal Information"
+  },
+  {
+    "id": "QK_PRF_EDUCATION",
+    "name": "Education",
+    "placeholder": "Please tell your education detail",
+    "type": "Text",
+    "category": "Personal Information"
+  },
+  {
+    "id": "QK_ID_PAN",
+    "name": "PAN Card ID",
+    "placeholder": "Enter pan no.",
+    "type": "Text",
+    "category": "Identity"
+  },
+  {
+    "id": "QK_ID_DL",
+    "name": "Driving Licence ID",
+    "placeholder": "Enter driving licence no.",
+    "type": "Text",
+    "category": "Identity"
+  },
+  {
+    "id": "QK_ID_AADHAAR",
+    "name": "Aadhaar ID",
+    "placeholder": "Enter aadhaar number",
+    "type": "Text",
+    "category": "Identity"
+  },
+  {
+    "id": "QK_ID_VOTERID",
+    "name": "Voter ID",
+    "placeholder": "Enter voter id",
+    "type": "Text",
+    "category": "Identity"
+  },
+  {
+    "id": "QK_ID_PASSPORT",
+    "name": "Passport ID",
+    "placeholder": "Enter passport no.",
+    "type": "Text",
+    "category": "Identity"
+  },
+  {
+    "id": "QK_CNT_EMAIL1",
+    "name": "Email",
+    "placeholder": "Enter email address",
+    "type": "Email",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_PHONE_MOBILE_1",
+    "name": "Mobile No.",
+    "placeholder": "Enter mobile no.",
+    "type": "Phone",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_PHONE_RES_2",
+    "name": "Phone (Res.)",
+    "placeholder": "Enter residential phone no.",
+    "type": "Phone",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_PHONE_OFF_2",
+    "name": "Phone (Off.)",
+    "placeholder": "Enter office phone no.",
+    "type": "Phone",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_HOMEADDR",
+    "name": "Current Address",
+    "placeholder": "Enter your current address",
+    "type": "TextArea",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_HOMEADDR_PIN",
+    "name": "Current Address PIN",
+    "placeholder": "Enter pin",
+    "type": "Text",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_HOMEADDR_COUNTRY",
+    "name": "Current Address Country",
+    "placeholder": "Enter your country",
+    "type": "Text",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_PERMADDR",
+    "name": "Permanent Address",
+    "placeholder": "Enter your permanent address",
+    "type": "TextArea",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_PERMADDR_PIN",
+    "name": "Permanent Address PIN",
+    "placeholder": "Enter pin",
+    "type": "Text",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_CNT_PERMADDR_COUNTRY",
+    "name": "Permanent Address Country",
+    "placeholder": "Enter your country",
+    "type": "Text",
+    "category": "Contact Information"
+  },
+  {
+    "id": "QK_FIN_ANNUALSALARY",
+    "name": "Annual Salary",
+    "placeholder": "Enter annual salary",
+    "type": "Amount",
+    "category": "Finance Information"
+  },
+  {
+    "id": "QK_FIN_NETWORTH",
+    "name": "Net Worth",
+    "placeholder": "Enter your net worth",
+    "type": "Amount",
+    "category": "Finance Information"
+  },
+  {
+    "id": "QK_FIN_FINANCIALASSETS",
+    "name": "Financial Assets",
+    "placeholder": "Financial assets",
+    "type": "Amount",
+    "category": "Finance Information"
+  },
+  {
+    "id": "QK_FIN_MONTHLYSALARY",
+    "name": "Monthly Salary",
+    "placeholder": "Your monthly salary",
+    "type": "Amount",
+    "category": "Finance Information"
+  },
+  {
+    "id": "QK_MED_BLOODGROUP",
+    "name": "Blood Group",
+    "placeholder": "Your blood group",
+    "type": "Enum",
+    "category": "Medical Information",
+    "options": [
+      "O+",
+      "O-",
+      "A+",
+      "A-",
+      "B+",
+      "B-",
+      "AB+",
+      "AB-"
+    ]
+  },
+  {
+    "id": "QK_MED_ALLERGY1",
+    "name": "Allergy 1",
+    "placeholder": "If any allergy",
+    "type": "Text",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_ALLERGY2",
+    "name": "Allergy 2",
+    "placeholder": "If any allergy",
+    "type": "Text",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_ALLERGY3",
+    "name": "Allergy 3",
+    "placeholder": "If any allergy",
+    "type": "Text",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_FBS",
+    "name": "FBS",
+    "placeholder": "Your FBS",
+    "type": "Number",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_PPS",
+    "name": "PPS",
+    "placeholder": "Your PPS",
+    "type": "Number",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_HBAIC",
+    "name": "HBAIC",
+    "placeholder": "Your HBAIC",
+    "type": "Number",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_LDL",
+    "name": "LDL",
+    "placeholder": "Your LDL",
+    "type": "Number",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_HDL",
+    "name": "HDL",
+    "placeholder": "Your HDL",
+    "type": "Number",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_MED_TG",
+    "name": "TG",
+    "placeholder": "Your TG",
+    "type": "Number",
+    "category": "Medical Information"
+  },
+  {
+    "id": "QK_DOC_PAN",
+    "name": "PAN Card",
+    "placeholder": "Upload pan card",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_PASSPORT",
+    "name": "Passport",
+    "placeholder": "Upload passport",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_BANKSTATEMENT",
+    "name": "Bank Statement",
+    "placeholder": "Upload bank statement",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_SALARYSTATEMENT",
+    "name": "Salary Statement",
+    "placeholder": "Upload salary statement",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_AADHAAR",
+    "name": "Aadhaar",
+    "placeholder": "Upload aadhaar card",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_VOTERID",
+    "name": "Voter",
+    "placeholder": "Upload voter id card",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_ELECTRICITYBILL",
+    "name": "Electricity Bill",
+    "placeholder": "Upload electricity bill",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_PHONEBILL",
+    "name": "Phone Bill",
+    "placeholder": "Upload phone bill",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_DL",
+    "name": "Driving Licence",
+    "placeholder": "Upload driving licence",
+    "type": "DOC",
+    "category": "Document"
+  },
+  {
+    "id": "QK_DOC_PHOTO",
+    "name": "Photo",
+    "placeholder": "",
+    "type": "DOC",
+    "category": "Document"
+  }
+]

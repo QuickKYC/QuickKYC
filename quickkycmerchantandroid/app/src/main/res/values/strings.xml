@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QuickKYCMerchant</string>
+    <string name="signin">Sign In</string>
 </resources>
