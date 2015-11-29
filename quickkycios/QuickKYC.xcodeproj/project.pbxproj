@@ -32,6 +32,7 @@
 		EFF1330A1C0A25B3004325E7 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133091C0A25B3004325E7 /* TableView.m */; };
 		EFF1330D1C0A2A1A004325E7 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1330C1C0A2A1A004325E7 /* KLCPopup.m */; };
 		EFF133101C0A8CED004325E7 /* AllFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF1330F1C0A8CED004325E7 /* AllFields.plist */; };
+		EFF133131C0A9F41004325E7 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133121C0A9F41004325E7 /* Request.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,8 @@
 		EFF1330B1C0A2A1A004325E7 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
 		EFF1330C1C0A2A1A004325E7 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
 		EFF1330F1C0A8CED004325E7 /* AllFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllFields.plist; sourceTree = "<group>"; };
+		EFF133111C0A9F41004325E7 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		EFF133121C0A9F41004325E7 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		EFF132A81C0952A1004325E7 /* QuickKYC */ = {
 			isa = PBXGroup;
 			children = (
+				EFF133141C0A9F4C004325E7 /* Utilities */,
 				EFF1330E1C0A2A23004325E7 /* Popup */,
 				EFF133071C0A189E004325E7 /* Plist */,
 				EFF133061C0A1863004325E7 /* CustomCells */,
@@ -205,6 +209,15 @@
 			name = Popup;
 			sourceTree = "<group>";
 		};
+		EFF133141C0A9F4C004325E7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EFF133111C0A9F41004325E7 /* Request.h */,
+				EFF133121C0A9F41004325E7 /* Request.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF132E01C098789004325E7 /* QRCodeReaderViewController.m in Sources */,
+				EFF133131C0A9F41004325E7 /* Request.m in Sources */,
 				EFF132E11C098789004325E7 /* QRToggleTorchButton.m in Sources */,
 				EFF132B11C0952A1004325E7 /* ViewController.m in Sources */,
 				EFF132F81C09E3F1004325E7 /* Profiles.m in Sources */,
