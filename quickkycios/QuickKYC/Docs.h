@@ -10,4 +10,8 @@
 
 @interface Docs : NSObject
 
+@property (nonatomic, readonly)	NSMutableDictionary * usersDocDictionary;
+
++ (Docs *) getInstance;
+
 @end

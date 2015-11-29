@@ -14,7 +14,13 @@
 #define KEY_FORM_MNAME @"mname"
 #define KEY_FORM_URL @"merchant_url"
 #define KEY_FORM_ID @"fid"
+#define KEY_FORM_KEY_ID @"qkid"
+#define KEY_FORM_OPTIONAL @"optional"
+#define KEY_FORM_MINLEN @"minlen"
 #define KEY_FORM_KEYS @"qk_keys"
+#define KEY_FORM_DOCS @"qk_docs"
+#define KEY_FORM_DATA @"data"
+#define KEY_FORM_MID @"mid"
 
 #define KEY_NAME @"name"
 #define KEY_ID @"id"

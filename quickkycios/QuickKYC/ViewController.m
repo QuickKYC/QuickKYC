@@ -41,6 +41,13 @@
 
 @implementation ViewController
 
+- (void) viewDidLoad
+{
+	[super viewDidLoad];
+	self.navigationController.navigationBar.hidden = YES;
+	self.navigationItem.hidesBackButton = YES;
+}
+
 - (IBAction)scanAction:(id)sender
 {
 	if ([QRCodeReader supportsMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]]) {

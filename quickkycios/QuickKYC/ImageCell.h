@@ -6,8 +6,10 @@
 //  Copyright © 2015 Teligenz Tech Solutions. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DropDownCell.h"
 
-@interface ImageCell : UITableViewController
+@interface ImageCell : DropDownCell
+
+@property (nonatomic, weak) IBOutlet UILabel *imageNameLabel;
 
 @end

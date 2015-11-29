@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "Request.h"
 
-@interface QKViewController : UIViewController
+@interface QKViewController : UIViewController<RequestProtocol>
 
 @end

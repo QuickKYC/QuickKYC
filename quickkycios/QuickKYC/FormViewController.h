@@ -10,6 +10,7 @@
 #import "TextTableCell.h"
 #import "DropDownCell.h"
 #import "TableView.h"
+#import "ImageCell.h"
 
 @interface FormViewController : QKViewController<UITableViewDataSource, UITableViewDelegate,TableViewDelegate, CustomCellDelegate>
 

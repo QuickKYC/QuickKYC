@@ -4,12 +4,21 @@
 <dict>
 	<key>Sophia</key>
 	<dict>
-		<key>3b271e0b1a0013c897750c11e0a17288</key>
+		<key>s_pancard.jpg</key>
 		<string></string>
-		<key>14af5616829b07148155dfaee60dcc64</key>
+		<key>s_passport.jpg</key>
+		<string></string>
+		<key>s_licence.jpeg</key>
 		<string></string>
 	</dict>
 	<key>Jake</key>
-	<string></string>
+	<dict>
+		<key>j_passport.jpeg</key>
+		<string></string>
+		<key>j_pancard.jpeg</key>
+		<string></string>
+		<key>j_licence.jpeg</key>
+		<string></string>
+	</dict>
 </dict>
 </plist>

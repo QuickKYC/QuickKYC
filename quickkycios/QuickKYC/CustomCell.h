@@ -17,6 +17,7 @@
 
 - (void) buttonPressed:(CustomCell *)cell;
 
+- (void) textChanged:(CustomCell *)cell;
 
 @end
 

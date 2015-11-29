@@ -26,6 +26,7 @@
 	NSMutableDictionary *formDictionary;
 	AllFields *allFields;
 	__weak IBOutlet UITableView *tv;
+	UILabel *tvHeaderLbl;
 }
 @end
 
@@ -46,8 +47,21 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	
-	
+	self.navigationController.navigationBar.hidden = NO;
+		self.navigationItem.hidesBackButton = NO;
+
+	self.title = [formDictionary objectForKey:KEY_FORM_MNAME];
+	CGRect rect = self.view.frame;
+	rect.size.height = 40;
+	 if (!tvHeaderLbl)
+	 {
+		 tvHeaderLbl= [[UILabel alloc] initWithFrame:rect];
+	 }
+	tv.tableHeaderView = tvHeaderLbl;
+	tvHeaderLbl.text = [formDictionary objectForKey:KEY_FORM_NAME];
+	tvHeaderLbl.textAlignment = NSTextAlignmentCenter;
+	[tvHeaderLbl setFont:[UIFont fontWithName:@"System" size:16]];
+
 }
 
 - (void) loadFromDictionary:(NSDictionary *) formDict
@@ -98,6 +112,7 @@
 	SwitchTableCell *sectionView = [tableView dequeueReusableCellWithIdentifier:SECTION_ID];
 	return sectionView;
 }
+
 
 #pragma mark - CustomCell delegate
 - (void) stateChanged:(CustomCell *)c

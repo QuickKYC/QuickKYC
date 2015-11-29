@@ -27,9 +27,9 @@
 		<key>QK_ID_PASSPORT</key>
 		<string>PA-AA-2222</string>
 		<key>QK_DOC_PAN</key>
-		<string>s_pancard.png</string>
+		<string>s_pancard.jpg</string>
 		<key>QK_DOC_PASSPORT</key>
-		<string>passport.png</string>
+		<string>s_passport.jpg</string>
 	</dict>
 	<key>Jake</key>
 	<dict/>

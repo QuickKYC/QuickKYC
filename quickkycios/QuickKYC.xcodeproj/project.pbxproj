@@ -18,7 +18,6 @@
 		EFF132DF1C098789004325E7 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132D81C098789004325E7 /* QRCodeReaderView.m */; };
 		EFF132E01C098789004325E7 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132DA1C098789004325E7 /* QRCodeReaderViewController.m */; };
 		EFF132E11C098789004325E7 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132DC1C098789004325E7 /* QRToggleTorchButton.m */; };
-		EFF132E31C0987B6004325E7 /* Profiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF132E21C0987B6004325E7 /* Profiles.plist */; };
 		EFF132E61C0998EC004325E7 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132E51C0998EC004325E7 /* CategoryViewController.m */; };
 		EFF132E91C099E0E004325E7 /* SwitchTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF132E81C099E0E004325E7 /* SwitchTableCell.m */; };
 		EFF132EB1C09A1B6004325E7 /* AllFields.plist_old in Resources */ = {isa = PBXBuildFile; fileRef = EFF132EA1C09A1B6004325E7 /* AllFields.plist_old */; };
@@ -33,6 +32,16 @@
 		EFF1330D1C0A2A1A004325E7 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1330C1C0A2A1A004325E7 /* KLCPopup.m */; };
 		EFF133101C0A8CED004325E7 /* AllFields.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF1330F1C0A8CED004325E7 /* AllFields.plist */; };
 		EFF133131C0A9F41004325E7 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133121C0A9F41004325E7 /* Request.m */; };
+		EFF133161C0ACDB3004325E7 /* Profiles.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF133151C0ACDB3004325E7 /* Profiles.plist */; };
+		EFF1331A1C0AD17B004325E7 /* Docs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF133171C0AD17B004325E7 /* Docs.plist */; };
+		EFF1331B1C0AD17B004325E7 /* s_pancard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFF133181C0AD17B004325E7 /* s_pancard.jpg */; };
+		EFF1331C1C0AD17B004325E7 /* s_passport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFF133191C0AD17B004325E7 /* s_passport.jpg */; };
+		EFF1331F1C0AD22B004325E7 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF1331E1C0AD22B004325E7 /* ImageCell.m */; };
+		EFF133241C0AED78004325E7 /* j_licence.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF133201C0AED78004325E7 /* j_licence.jpeg */; };
+		EFF133251C0AED78004325E7 /* j_pancard.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF133211C0AED78004325E7 /* j_pancard.jpeg */; };
+		EFF133261C0AED78004325E7 /* j_passport.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF133221C0AED78004325E7 /* j_passport.jpeg */; };
+		EFF133271C0AED78004325E7 /* s_licence.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFF133231C0AED78004325E7 /* s_licence.jpeg */; };
+		EFF1332A1C0AED9F004325E7 /* Docs.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF133291C0AED9F004325E7 /* Docs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +66,6 @@
 		EFF132DA1C098789004325E7 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
 		EFF132DB1C098789004325E7 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRToggleTorchButton.h; sourceTree = "<group>"; };
 		EFF132DC1C098789004325E7 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRToggleTorchButton.m; sourceTree = "<group>"; };
-		EFF132E21C0987B6004325E7 /* Profiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profiles.plist; sourceTree = "<group>"; };
 		EFF132E41C0998EC004325E7 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		EFF132E51C0998EC004325E7 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		EFF132E71C099E0E004325E7 /* SwitchTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableCell.h; sourceTree = "<group>"; };
@@ -85,6 +93,18 @@
 		EFF1330F1C0A8CED004325E7 /* AllFields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AllFields.plist; sourceTree = "<group>"; };
 		EFF133111C0A9F41004325E7 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		EFF133121C0A9F41004325E7 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		EFF133151C0ACDB3004325E7 /* Profiles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profiles.plist; sourceTree = "<group>"; };
+		EFF133171C0AD17B004325E7 /* Docs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Docs.plist; sourceTree = "<group>"; };
+		EFF133181C0AD17B004325E7 /* s_pancard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s_pancard.jpg; sourceTree = "<group>"; };
+		EFF133191C0AD17B004325E7 /* s_passport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s_passport.jpg; sourceTree = "<group>"; };
+		EFF1331D1C0AD22B004325E7 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		EFF1331E1C0AD22B004325E7 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		EFF133201C0AED78004325E7 /* j_licence.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j_licence.jpeg; sourceTree = "<group>"; };
+		EFF133211C0AED78004325E7 /* j_pancard.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j_pancard.jpeg; sourceTree = "<group>"; };
+		EFF133221C0AED78004325E7 /* j_passport.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = j_passport.jpeg; sourceTree = "<group>"; };
+		EFF133231C0AED78004325E7 /* s_licence.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s_licence.jpeg; sourceTree = "<group>"; };
+		EFF133281C0AED9F004325E7 /* Docs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Docs.h; sourceTree = "<group>"; };
+		EFF133291C0AED9F004325E7 /* Docs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Docs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +198,8 @@
 				EFF133041C09F07E004325E7 /* CustomCell.m */,
 				EFF132E71C099E0E004325E7 /* SwitchTableCell.h */,
 				EFF132E81C099E0E004325E7 /* SwitchTableCell.m */,
+				EFF1331D1C0AD22B004325E7 /* ImageCell.h */,
+				EFF1331E1C0AD22B004325E7 /* ImageCell.m */,
 				EFF132F91C09EAFB004325E7 /* TextTableCell.h */,
 				EFF132FC1C09EB24004325E7 /* DropDownCell.h */,
 				EFF132FA1C09EAFB004325E7 /* TextTableCell.m */,
@@ -189,11 +211,20 @@
 		EFF133071C0A189E004325E7 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				EFF133171C0AD17B004325E7 /* Docs.plist */,
+				EFF133181C0AD17B004325E7 /* s_pancard.jpg */,
+				EFF133191C0AD17B004325E7 /* s_passport.jpg */,
+				EFF133201C0AED78004325E7 /* j_licence.jpeg */,
+				EFF133211C0AED78004325E7 /* j_pancard.jpeg */,
+				EFF133221C0AED78004325E7 /* j_passport.jpeg */,
+				EFF133231C0AED78004325E7 /* s_licence.jpeg */,
 				EFF132EC1C09B700004325E7 /* AllFields.h */,
 				EFF132ED1C09B700004325E7 /* AllFields.m */,
+				EFF133281C0AED9F004325E7 /* Docs.h */,
+				EFF133291C0AED9F004325E7 /* Docs.m */,
 				EFF132F61C09E3F1004325E7 /* Profiles.h */,
 				EFF132F71C09E3F1004325E7 /* Profiles.m */,
-				EFF132E21C0987B6004325E7 /* Profiles.plist */,
+				EFF133151C0ACDB3004325E7 /* Profiles.plist */,
 				EFF132EA1C09A1B6004325E7 /* AllFields.plist_old */,
 				EFF1330F1C0A8CED004325E7 /* AllFields.plist */,
 			);
@@ -275,12 +306,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF132E31C0987B6004325E7 /* Profiles.plist in Resources */,
+				EFF133241C0AED78004325E7 /* j_licence.jpeg in Resources */,
+				EFF1331C1C0AD17B004325E7 /* s_passport.jpg in Resources */,
 				EFF132B91C0952A1004325E7 /* LaunchScreen.storyboard in Resources */,
+				EFF133271C0AED78004325E7 /* s_licence.jpeg in Resources */,
 				EFF133101C0A8CED004325E7 /* AllFields.plist in Resources */,
+				EFF133261C0AED78004325E7 /* j_passport.jpeg in Resources */,
+				EFF1331A1C0AD17B004325E7 /* Docs.plist in Resources */,
 				EFF132EB1C09A1B6004325E7 /* AllFields.plist_old in Resources */,
 				EFF132B61C0952A1004325E7 /* Assets.xcassets in Resources */,
 				EFF132B41C0952A1004325E7 /* Main.storyboard in Resources */,
+				EFF133161C0ACDB3004325E7 /* Profiles.plist in Resources */,
+				EFF133251C0AED78004325E7 /* j_pancard.jpeg in Resources */,
+				EFF1331B1C0AD17B004325E7 /* s_pancard.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +333,14 @@
 				EFF133131C0A9F41004325E7 /* Request.m in Sources */,
 				EFF132E11C098789004325E7 /* QRToggleTorchButton.m in Sources */,
 				EFF132B11C0952A1004325E7 /* ViewController.m in Sources */,
+				EFF1332A1C0AED9F004325E7 /* Docs.m in Sources */,
 				EFF132F81C09E3F1004325E7 /* Profiles.m in Sources */,
 				EFF132DE1C098789004325E7 /* QRCodeReader.m in Sources */,
 				EFF132E91C099E0E004325E7 /* SwitchTableCell.m in Sources */,
 				EFF132E61C0998EC004325E7 /* CategoryViewController.m in Sources */,
 				EFF132F51C09DE87004325E7 /* FormViewController.m in Sources */,
 				EFF133021C09EC62004325E7 /* QKViewController.m in Sources */,
+				EFF1331F1C0AD22B004325E7 /* ImageCell.m in Sources */,
 				EFF1330A1C0A25B3004325E7 /* TableView.m in Sources */,
 				EFF132AE1C0952A1004325E7 /* AppDelegate.m in Sources */,
 				EFF132DF1C098789004325E7 /* QRCodeReaderView.m in Sources */,

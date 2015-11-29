@@ -13,6 +13,14 @@
 - (void)awakeFromNib {
     // Initialization code
 }
+- (IBAction)textChanged:(id)sender
+{
+	if ([self.delegate respondsToSelector:@selector(textChanged:)])
+	{
+		[self.delegate textChanged:self];
+		
+	}
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

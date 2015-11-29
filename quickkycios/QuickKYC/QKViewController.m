@@ -10,4 +10,9 @@
 
 @implementation QKViewController
 
+- (void) response:(NSData *) data attachment:(NSObject *) attachment;
+{
+	NSLog(@"Override for response");
+}
+
 @end
