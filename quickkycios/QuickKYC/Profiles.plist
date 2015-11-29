@@ -9,13 +9,27 @@
 		<key>QK_PRF_GENDER</key>
 		<string>Female</string>
 		<key>QK_PRF_DOB</key>
-		<string>28112015</string>
+		<string>10101990</string>
 		<key>QK_PRF_MARITALSTATUS</key>
-		<string>SIngle</string>
-		<key>QK_PRF_OCCUPATION</key>
-		<string>Architect</string>
-		<key>QK_PRF_EDUCATION</key>
-		<string>BS</string>
+		<string>Single</string>
+		<key>QK_CNT_EMAIL1</key>
+		<string>sophia@gmail.com</string>
+		<key>QK_CNT_PHONE_MOBILE_1</key>
+		<string>9299919999</string>
+		<key>QK_CNT_HOMEADDR</key>
+		<string>Jayanagar, Bangalore</string>
+		<key>QK_CNT_HOMEADDR_PIN</key>
+		<string>560069</string>
+		<key>QK_CNT_HOMEADDR_COUNTRY</key>
+		<string>India</string>
+		<key>QK_ID_PAN</key>
+		<string>BR344333333</string>
+		<key>QK_ID_PASSPORT</key>
+		<string>PA-AA-2222</string>
+		<key>QK_DOC_PAN</key>
+		<string>s_pancard.png</string>
+		<key>QK_DOC_PASSPORT</key>
+		<string>passport.png</string>
 	</dict>
 	<key>Jake</key>
 	<dict/>
